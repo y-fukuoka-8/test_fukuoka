@@ -23,14 +23,7 @@ class OutputCSVData:
             if start_index != -1:
                 # TOP/の長さは4文字なので、TOP/" の直後から切り出すために+4をする
                 room_match = line[start_index + 4 : line.rfind("(")].strip()
-            """
-            start_index = line.find("TOP/")
-            if start_index != -1:
-                substring = line[start_index + 4 :]
-                end_index = substring.rfind("(")
-                if end_index != -1:
-                    room_match = substring[:end_index].strip()
-            """
+
             # room_matchに正規表現で抽出した値を格納
             # TOP/から(までの文字列を抽出 [^()]+は()以外の文字列を表す
             # ()でグループ化を行う　group(0)は完全一致部分抽出、group(1)は()内の部分抽出

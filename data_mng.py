@@ -1,4 +1,4 @@
-#
+#　カリスマ
 # Copyright (C) 2024 FUJITSU LIMITED
 #
 from input_csv_data import InputCSVData
