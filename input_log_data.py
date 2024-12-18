@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2024 FUJITSU LIMITED
+#プルできましたか？
 #
 import os
 import logging
