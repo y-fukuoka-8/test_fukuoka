@@ -1,7 +1,7 @@
 #
 # Copyright (C) 2024 FUJITSU LIMITED
 #プルできましたか？
-#
+#2度目のコミット
 import os
 import logging
 
