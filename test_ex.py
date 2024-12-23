@@ -29,6 +29,7 @@ def test_ex_funcs(x: int, y: int, expected: int) -> None:
         (3, 2, 1),
         (10, 5, 5),
         (11, 1, 10),
+        (100, 1, 99),
     ],
 )
 def test_ex_funcs2(
