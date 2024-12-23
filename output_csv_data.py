@@ -1,4 +1,4 @@
-#コミットを理解するためのコメント
+# コミットを理解するためのコメント
 # Copyright (C) 2024 FUJITSU LIMITED
 #
 import csv
