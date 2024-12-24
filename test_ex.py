@@ -1,8 +1,6 @@
 import pytest
 from ex import ex_funcs, ex_funcs2
 
-# テスト関数
-
 
 @pytest.mark.parametrize(
     "x, y, expected",
@@ -10,6 +8,7 @@ from ex import ex_funcs, ex_funcs2
         (3, 2, 1),
         (2, 3, 5),
         (10, 20, 30),
+        # 　かおかおかおかおかおこ
     ],
 )
 def test_ex_funcs(x: int, y: int, expected: int) -> None:
