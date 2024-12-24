@@ -1,6 +1,7 @@
-#　カリスマ
+# 　カリスマ
 # Copyright (C) 2024 FUJITSU LIMITED
 # 12/20
+# いつになればコンフリクト起こりますか
 from input_csv_data import InputCSVData
 from input_log_data import InputLogData
 from output_csv_data import OutputCSVData
