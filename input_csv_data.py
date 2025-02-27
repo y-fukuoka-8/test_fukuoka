@@ -51,6 +51,11 @@ class InputCSVData:
                     error_message = f"UERR003,{file_name}が空です"
                     logging.error(error_message)
                     return False
+                # ファイルがブランクスペースのみの場合にエラーを出す
+                elif all(not any(row) for row in self.rows):
+                    error_message = f"UERR003,{file_name}がブランクスペースのみです"
+                    logging.error(error_message)
+                    return False
                 else:
                     self.all_rows.extend(self.rows)
 

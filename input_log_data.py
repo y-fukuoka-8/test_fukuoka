@@ -44,5 +44,10 @@ class InputLogData:
             error_message = f"UERR003,{self.log_file}が空です"
             logging.error(error_message)
             return False
+        # ファイルがブランクスペースのみの場合にエラーを出す
+        elif all(not line.strip() for line in self.lines):
+            error_message = f"UERR003,{self.log_file}がブランクスペースのみです"
+            logging.error(error_message)
+            return False
 
         return True
