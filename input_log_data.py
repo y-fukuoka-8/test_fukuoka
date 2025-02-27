@@ -2,6 +2,7 @@
 # Copyright (C) 2024 FUJITSU LIMITED
 #プルできましたか？
 #2度目のコミット
+#何もわからへん
 import os
 import logging
 
@@ -41,6 +42,11 @@ class InputLogData:
         # ファイルが空の場合にエラーを出す
         if len(self.lines) == 0:  # TODO ブランクスペースは通る？ 通った、、、。
             error_message = f"UERR003,{self.log_file}が空です"
+            logging.error(error_message)
+            return False
+        # ファイルがブランクスペースのみの場合にエラーを出す
+        elif all(not line.strip() for line in self.lines):
+            error_message = f"UERR003,{self.log_file}がブランクスペースのみです"
             logging.error(error_message)
             return False
 
